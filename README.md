@@ -66,6 +66,97 @@ Số phần tử mảng được xác định khi khai báo
 Sử dụng toán tử [] để truy cập phân tử của mảng
 Ví dụ: ai[2], af[10], …
 Chỉ số các phần tử mảng được đánh số từ 0
+c 	
+Ví dụ 
+Nhập danh sách các giá trị nguyên vào một mảng, sau đó tìm phần tử có giá trị nhỏ nhất trong mảng
+`#include <stdio.h>
+#define N 10
+main()
+{	
+  int x[N], min;
+    int i;
+    for (i=0; i <= N-1; i++){	
+	printf(" x[%d]= ", i);
+	scanf("%d", &x[i]);
+    }
+  min = x[0];
+    for (i=1; i < N; i++)
+	if (min > x[i]) min = x[i];
+  printf("\n min= %d", min);
+}` 
+
+- Khởi tạo mảng
++ Mảng có thể được khởi tạo giá trị ngay khi khai báo
++ Cú pháp
+kiểu_dữ_liệu   tên_mảng[số_phần_tử_của_mảng] = {danh_sách_các_giá_trị_khởi_tạo}; 
++ Khi khai báo mảng có khởi tạo giá trị thì có thể không cần chỉ ra số phần tử mảng
++ Ví dụ
+	int ai[3] = {2, 4, 5};
+ + Hoặc
+	int ai[] = {2, 4, 5}; /*không khai báo số phần tử mảng*/ 
+
+###Định nghĩa kiểu mới – từ khóa typedef
++ Có thể sử dụng từ khóa typedef để định nghĩa các kiểu dữ liệu mới
++ Kiểu dữ liệu mới sẽ được sử dụng để khai báo dữ liệu 
++ Ví dụ
+	+typedef int kieunguyen; 
+	+typedef float mangthuc10[10]; 
+- sử dụng
++ kieunguyen x, a[100];
++ mangthuc10 x, y;
+
+- Mảng và địa chỉ
++ Toán tử & dùng để lấy địa chỉ một biến
++ Toán tử & cũng được dùng để lấy địa chỉ của một phần tử mảng
++ Các phần tử trong mảng được bố trí các ô nhớ liên tiếp nhau trên bộ nhớ
++ Nếu biết được địa chỉ phần tử thú i sẽ xác định được địa chỉ phần tử thú i+1
++ Địa chỉ phần tử đầu tiên là địa chỉ của mảng
+- Tên mảng mang địa chỉ của mảng đó
+-Mảng và địa chỉ
++ Ví dụ
+float a[100];
+float *pa;
++ Các cách viết sau là tương đương:
+a  &a[0]
+a + i  &a[i]
+*(a + i)  a[i]
++ Các phép gán hợp lệ
+pa = a;
+pa = &a[0];
+
+- Mảng là tham số của hàm
++ Khi sử dụng mảng là tham số của hàm, ta có thể khai báo, chẳng hạn:
+		int a[]
+Hoặc
+		int *a
++ Như thế, hai cách sau là tương đương:
+f(int a[]) { … }
+f(int *a) { … }
++ Khi sử dụng, có thể gọi:
+	f(a);
+Hoặc
+	f(&a[0]);
+	
++ ví dụ
+`void nhap_mang(int *x, int n)
+{
+	int i;
+	/* Đọc các giá trị mảng */
+	for (i=0; i <= n-1; i++)
+	{	
+		printf(" x[%d]= ", i);
+		scanf("%d", &x[i]); 
+	}
+}`
+
+`void xuat_mang(int *x, int n)
+{
+	int i;
+	/* In các giá trị mảng */
+	for (i=0; i <= n-1; i++)
+		printf(" x[%d]= %d\n", i, x[i]);
+} `
+
 
 
 
