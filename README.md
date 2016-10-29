@@ -37,17 +37,17 @@ Nhập dữ liệu cho mảng
 			printf(“Phan tu thu %d= ”,i);
 			scanf(“%d”, &a[i]);
 		}` 
--	In các phần tử của mảng ra màn hình
-
-	`for(i=0;i<n;i++)  printf(“%6d”,a[i])`		
+-	>In các phần tử của mảng ra màn hình
+>
+	>`for(i=0;i<n;i++)  printf(“%6d”,a[i])`		
   
   ###Nhập xuất dữ liệu gián tiếp thông qua một biến trung gian đối với mảng một chiều và mảng đa chiều
-	`for(i=0;i<2;i++)
-		for(j=0;j<3;j++) {
-			printf(“a[%d,%d]”, i, j);
-			scanf(“%f”,&temp);
-			a[i] [j] = temp;
-		}`
+	>`for(i=0;i<2;i++)
+		>for(j=0;j<3;j++) {
+			>printf(“a[%d,%d]”, i, j);
+			>scanf(“%f”,&temp);
+			>a[i] [j] = temp;
+		}`>
 #Kiểu mảng
 
 ###Khi làm việc với các cấu trúc dữ liệu dạng dãy hay danh sách các phần tử, ta sử dụng kiểu mảng (array)
@@ -70,7 +70,7 @@ c
 Ví dụ 
 Nhập danh sách các giá trị nguyên vào một mảng, sau đó tìm phần tử có giá trị nhỏ nhất trong mảng
 `#include <stdio.h>
-#define N 10
+>#define N 10
 main()
 {	
   int x[N], min;
