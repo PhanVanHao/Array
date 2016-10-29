@@ -39,10 +39,10 @@ Nhập dữ liệu cho mảng
 		}``` 
 -	>In các phần tử của mảng ra màn hình
 
-	```for(i=0;i<n;i++)  printf(“%6d”,a[i])`		
+	```for(i=0;i<n;i++)  printf(“%6d”,a[i])```		
   
   ###Nhập xuất dữ liệu gián tiếp thông qua một biến trung gian đối với mảng một chiều và mảng đa chiều
-	>`for(i=0;i<2;i++)
+	```for(i=0;i<2;i++)
 		>for(j=0;j<3;j++) {
 			>printf(“a[%d,%d]”, i, j);
 			>scanf(“%f”,&temp);
