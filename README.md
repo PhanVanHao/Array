@@ -22,7 +22,7 @@
 Phần tử của mảng được xác định thông qua chỉ số. Chỉ số của phần tử trong mảng luôn là một số nguyên không vượt qua kích thước của mảng
 Các phần tử của mảng được sắp xếp liền nhau trong bộ nhớ của máy tính và chỉ cho phép truy cập đến địa chỉ trực tiếp của phần tử đối với mảng một chiều. Cách truy cập theo địa chỉ 
 
-  `&tên_biến[i]  `
+  ```&tên_biến[i]  ```
 
 trong đó i là chỉ số của phần tử
 
@@ -33,7 +33,7 @@ trong đó i là chỉ số của phần tử
 ##4. Cách xuất nhập dữ liệu trên mảng
 Nhập xuất trực tiếp ứng dụng cho mảng một chiều và mảng hai chiều có phần tử kiểu int thông qua địa chỉ 
 Nhập dữ liệu cho mảng
-	`for( i=0;i<5;i++) {
+	```for( i=0;i<5;i++) {
 			printf(“Phan tu thu %d= ”,i);
 			scanf(“%d”, &a[i]);
 		}``` 
@@ -58,10 +58,10 @@ Nhập dữ liệu cho mảng
 - Các phần tử được sắp xếp theo trật tự nhất định
 
 ##Cú pháp khai báo mảng một chiều
-	`kiểu_dữ_liệu tên_mảng[số_phần_tử_của_mảng];` 
+	```kiểu_dữ_liệu tên_mảng[số_phần_tử_của_mảng];```
 Ví dụ
-`int ai[10];
-float af[100];`
+```int ai[10];
+float af[100];```
 Số phần tử mảng được xác định khi khai báo
 Sử dụng toán tử [] để truy cập phân tử của mảng
 Ví dụ: ai[2], af[10], …
@@ -69,8 +69,8 @@ Chỉ số các phần tử mảng được đánh số từ 0
 c 	
 Ví dụ 
 Nhập danh sách các giá trị nguyên vào một mảng, sau đó tìm phần tử có giá trị nhỏ nhất trong mảng
-`#include <stdio.h>
->#define N 10
+```#include <stdio.h>
+#define N 10
 main()
 {	
   int x[N], min;
@@ -83,7 +83,7 @@ main()
     for (i=1; i < N; i++)
 	if (min > x[i]) min = x[i];
   printf("\n min= %d", min);
-}` 
+}``` 
 
 - Khởi tạo mảng
 + Mảng có thể được khởi tạo giá trị ngay khi khai báo
@@ -138,7 +138,7 @@ Hoặc
 	f(&a[0]);
 	
 + ví dụ
-`void nhap_mang(int *x, int n)
+```void nhap_mang(int *x, int n)
 {
 	int i;
 	/* Đọc các giá trị mảng */
@@ -147,15 +147,15 @@ Hoặc
 		printf(" x[%d]= ", i);
 		scanf("%d", &x[i]); 
 	}
-}`
+}```
 
-`void xuat_mang(int *x, int n)
+```void xuat_mang(int *x, int n)
 {
 	int i;
 	/* In các giá trị mảng */
 	for (i=0; i <= n-1; i++)
 		printf(" x[%d]= %d\n", i, x[i]);
-} `
+} ```
 
 
 
