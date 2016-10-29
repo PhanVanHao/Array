@@ -33,21 +33,25 @@ trong đó i là chỉ số của phần tử
 ##4. Cách xuất nhập dữ liệu trên mảng
 Nhập xuất trực tiếp ứng dụng cho mảng một chiều và mảng hai chiều có phần tử kiểu int thông qua địa chỉ 
 Nhập dữ liệu cho mảng
+
 	```for( i=0;i<5;i++) {
 			printf(“Phan tu thu %d= ”,i);
 			scanf(“%d”, &a[i]);
 		}``` 
--	>In các phần tử của mảng ra màn hình
+		
+- In các phần tử của mảng ra màn hình
 
-	```for(i=0;i<n;i++)  printf(“%6d”,a[i])```		
+```for(i=0;i<n;i++)  printf(“%6d”,a[i])```		
   
   ###Nhập xuất dữ liệu gián tiếp thông qua một biến trung gian đối với mảng một chiều và mảng đa chiều
+  
 	```for(i=0;i<2;i++)
-		>for(j=0;j<3;j++) {
-			>printf(“a[%d,%d]”, i, j);
-			>scanf(“%f”,&temp);
-			>a[i] [j] = temp;
-		}```
+		for(j=0;j<3;j++) {
+			printf(“a[%d,%d]”, i, j);
+			scanf(“%f”,&temp);
+			a[i] [j] = temp;}
+```
+		
 #Kiểu mảng
 
 ###Khi làm việc với các cấu trúc dữ liệu dạng dãy hay danh sách các phần tử, ta sử dụng kiểu mảng (array)
@@ -58,7 +62,9 @@ Nhập dữ liệu cho mảng
 - Các phần tử được sắp xếp theo trật tự nhất định
 
 ##Cú pháp khai báo mảng một chiều
+
 	```kiểu_dữ_liệu tên_mảng[số_phần_tử_của_mảng];```
+	
 Ví dụ
 ```int ai[10];
 float af[100];```
@@ -148,6 +154,7 @@ Hoặc
 		scanf("%d", &x[i]); 
 	}
 }```
+
 
 ```void xuat_mang(int *x, int n)
 {
