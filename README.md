@@ -36,10 +36,10 @@ Nhập dữ liệu cho mảng
 	`for( i=0;i<5;i++) {
 			printf(“Phan tu thu %d= ”,i);
 			scanf(“%d”, &a[i]);
-		}` 
+		}``` 
 -	>In các phần tử của mảng ra màn hình
->
-	>`for(i=0;i<n;i++)  printf(“%6d”,a[i])`		
+
+	```for(i=0;i<n;i++)  printf(“%6d”,a[i])`		
   
   ###Nhập xuất dữ liệu gián tiếp thông qua một biến trung gian đối với mảng một chiều và mảng đa chiều
 	>`for(i=0;i<2;i++)
@@ -47,7 +47,7 @@ Nhập dữ liệu cho mảng
 			>printf(“a[%d,%d]”, i, j);
 			>scanf(“%f”,&temp);
 			>a[i] [j] = temp;
-		}`>
+		}```
 #Kiểu mảng
 
 ###Khi làm việc với các cấu trúc dữ liệu dạng dãy hay danh sách các phần tử, ta sử dụng kiểu mảng (array)
